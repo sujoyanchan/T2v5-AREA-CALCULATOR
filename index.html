@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Area Calculator</title>
+        <link rel="stylesheet" href="area.css">
+        <script src="area.js"></script>
+        <link rel="icon" type="image/x-icon" href="calculator.ico">
+    </head>
+    <body>
+        <center>
+        <h1>Area Calculator</h1>
+        <br/>
+        <form onchange="javascript:updateForm()">
+            <label for="id_shapes">Shape</label>
+            <select id="id_shapes">
+                <option value="circle" class="shapes" selected>Circle</option>
+                <option value="triangle" class="shapes" >Triangle</option>
+                <option value="square" class="shapes" >Square</option>
+                <option value="rectangle" class="shapes" >Rectangle</option>
+            </select>
+    
+            <br/><br/>
+
+            <div id="id_inputs_circle">
+                <label for="id_radius">Radius</label>
+                <input id="id_radius" type="number" min="0" step="any" placeholder="enter radius in cm">
+                <h2><i>A = &Pi;r<sup>2</sup></i></h2>
+            </div>
+
+            <div id="id_inputs_triangle" hidden>
+                <label for="id_base">Base</label>
+                <input id="id_base" type="number" min="0" step="any" placeholder="enter base in cm">
+                <label for="id_height">Height</label>
+                <input id="id_height" type="number" min="0" step="any" placeholder="enter height in cm">
+                <h2><i>A = <sup>bh</sup>&frasl;<sub>2</sub></i></h2>
+            </div>
+
+            <div id="id_inputs_square" hidden>
+                <label for="id_side">Side</label>
+                <input id="id_side" type="number" min="0" step="any" placeholder="enter side in cm">
+                <h2><i>A = s<sup>2</sup></i></h2>
+            </div>
+
+            <div id="id_inputs_rectangle" hidden>
+                <label for="id_length">Length</label>
+                <input id="id_length" type="number" min="0" step="any" placeholder="enter length in cm">
+                <label for="id_breadth">Breadth</label>
+                <input id="id_breadth" type="number" min="0" step="any" placeholder="enter breadth in cm">
+                <h2><i>A = lb</i></h2>
+            </div>
+
+            <button onclick="calculateArea()" type="button" class="btn">Calculate</button>
+            <button onclick="clearData()" type="button" class="btn">Clear</button>
+
+            <h2 id="id_output" class="output"></h2>
+        </center>
+        </form>
+    </body>
+</html>

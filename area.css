@@ -1,0 +1,7 @@
+* {font-size: 35px; font-family: sans-serif;}
+body {background-color: silver;}
+input { text-align: center; font-family: monospace; }
+.shapes {font-size: 20px;}
+.btn {width: 15%; border-radius: 30px; margin-right: 1%;}
+.btn:hover {background-color: yellow; color: red;}
+.output {color: red; font-family: monospace;}
