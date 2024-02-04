@@ -1,0 +1,23 @@
+Area Calculator
+
+Working
+=======
+We need to enter measurements for the shape selected from the dropdown. When we click on the 'Calculate' button, area of the shape will be computed and displayed as result. While clicking on the 'Clear' button will reset the data of selected shape.
+
+The user has been provided the option to calculate area for below shapes:
+1. Circle
+2. Triangle
+3. Square
+4. Rectangle
+
+Input Validations
+=================
+alerts are raised when
+1. the measurements entered for selected shape is negative.
+2. the measurements entered for selected shape is empty or zero.
+3. the measurements entered for selected shape has more than 15 digits. 
+
+=> We have set the max limit for meaurements entered as 15 digits. 
+=> The value of area has been rounded off to 2 decimals.
+=> Since the input field type is number for measurements of all shapes, we cannot enter spaces and special characters.
+=> The metric unit of measurement used for calculation is centimetre (cm).
